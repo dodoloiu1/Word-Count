@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="display: inline-flex">
+      <div class="div-input">
+        <textarea name="input" id="display"></textarea>
+        <div style="display: flex">
+          <div class="buttonu">
+            <p class="text-count">char count:</p>
+            <div
+              id="value"
+              style="
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+              "
+            >
+              0
+            </div>
+          </div>
+          <div class="buttonu">
+            <p class="text-count">word count:</p>
+            <div
+              id="value2"
+              style="
+                text-align: center;
+                font-family: 'Courier New', Courier, monospace;
+              "
+            >
+              0
+            </div>
+          </div>
+          <div class="buttonu">
+            <button onclick="saveToLocalStorage()">
+              Save to localStoarge the TEXT
+            </button>
+          </div>
+          <div class="buttonu">
+            <button onclick="loadFromLocalStorage()">
+              Load from localStoarge the TEXT
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="js.js"></script>

@@ -24,11 +24,15 @@ display.addEventListener("input", function (e) {
 
   // Mai eficient (se poate optimiza si mai mult, dar nu complic)
   // let count = 0;
-  // for (let i = 0; i < sircar.length; i++) {
-  //   if (sircar[i] === " ") {
-  //     continue;
+  // const str = display.value;
+  // let isIn = 0;
+  // for (let i = 0; i < str.length; i++) {
+  //   if (str[i] === " ") {
+  //     isIn = false;
+  //   } else if (!isIn) {
+  //     count++;
+  //     isIn = true;
   //   }
-  //   count++;
   // }
   // document.getElementById("value2").textContent = count;
 

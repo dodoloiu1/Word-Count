@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
@@ -7,17 +7,20 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- Nu iti recomand sa folosesti inline styles  -->
+    <!-- Aici nu conteaza, dar in proiecte mai mari, sunt super greu de aranjat, si daca le folosesti destul, poate chiar sa creeze probleme de performanta -->
     <div style="display: inline-flex">
       <div class="div-input">
         <textarea name="input" id="display"></textarea>
         <div style="display: flex">
           <div class="buttonu">
             <p class="text-count">char count:</p>
+            <!-- Nu e nevoie sa tot setezi fontul, daca il setezi intr-un element, toti copii lui o sa-l foloseasca (uita-te in style.css) -->
             <div
               id="value"
               style="
                 text-align: center;
-                font-family: 'Courier New', Courier, monospace;
+                font-family: &quot;Courier New&quot;, Courier, monospace;
               "
             >
               0
@@ -29,12 +32,13 @@
               id="value2"
               style="
                 text-align: center;
-                font-family: 'Courier New', Courier, monospace;
+                font-family: &quot;Courier New&quot;, Courier, monospace;
               "
             >
               0
             </div>
           </div>
+          <!-- Mai degraba, adauga evenimentul de onclick in fisierul de js, folosind referinte catre butoane -->
           <div class="buttonu">
             <button onclick="saveToLocalStorage()">
               Save to localStoarge the TEXT

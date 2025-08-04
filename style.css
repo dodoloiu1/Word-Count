@@ -1,46 +1,50 @@
-body{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: rgb(238, 238, 238);
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(238, 238, 238);
+  /* Muta fontul aici */
+  font-family: "Courier New", Courier, monospace;
 }
-button{
-    background-color: red;
-    font-weight: bold;
-    font-size: large;
-    border-radius: 1vh;
+button {
+  background-color: red;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 1vh;
+}
+#display {
+  font-size: 2rem;
+  overflow-x: auto;
+}
 
-}
-#display{
-    font-size: 2rem;
-    overflow-x: auto;
+/* Eu nu pre as folosii vh pt asta sau in celelalte locuri */
+.buttonu {
+  text-align: center;
+  padding: 1vh;
+  /* padding-bottom: 1vh; */
+  font-size: x-large;
 }
 
-.buttonu{
-    text-align: center;
-    padding: 1vh;
-    /* padding-bottom: 1vh; */
-    font-size: x-large;
-    
+textarea {
+  padding: 1vh;
+  height: 75vh;
+  width: 75vw;
+  border-radius: 5vh;
 }
-textarea{
-    padding: 1vh;
-    height: 75vh;
-    width: 75vw;
-    border-radius: 5vh;
-}
-.div-input{
-      border: 2px solid rgba(0, 0, 0, 0.256);
-    padding: 2vh;
-    background: rgb(245, 245, 245);
-    border-top-left-radius: 5vh;
-    text-align: center;
-    border-top-right-radius: 5vh;
+
+.div-input {
+  border: 2px solid rgba(0, 0, 0, 0.256);
+  padding: 2vh;
+  background: rgb(245, 245, 245);
+  border-top-left-radius: 5vh;
+  text-align: center;
+  border-top-right-radius: 5vh;
 }
 
 .text-count {
-    margin: 0;
-    font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  /* font-family: "Courier New", Courier, monospace; */
 }
+
